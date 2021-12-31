@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--mainBG);
+}
+
+p {
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card {
+    width: 350px;
+    height: 580px;
+    background-color: var(--cardBG);
+    margin: 60px auto;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.card-image {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    border-radius: 10%;
+}
+
+.overly {
+    position: absolute;
+    top: 4.2%;
+    left: 7%;
+    background-color: var(--Cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+    border-radius: 8px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.overly:hover {
+    opacity: 0.5;
+}
+
+.card-text,
+.price-days,
+.credit {
+    padding: 0 25px;
+}
+
+.card-text h2 {
+    color: var(--White);
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.card-text h2:hover {
+    color: var(--Cyan);
+}
+
+.card-text p {
+    color: var(--Softblue);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.price-days {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.price-days .price h4 {
+    color: var(--Cyan);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.price-days .price {
+    display: flex;
+    gap: 8px;
+}
+
+.days p {
+    color: var(--Softblue);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.days {
+    display: flex;
+    gap: 8px;
+}
+
+.line {
+    width: 86%;
+    height: 2px;
+    background-color: var(--line);
+    margin: 15px 25px;
+}
+
+.credit {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--Softblue);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.credit span {
+    color: var(--White);
+    font-weight: 400;
+}
+
+.credit span:hover {
+    color: var(--Cyan);
+}
+
+.credit img {
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    width: 12%;
+}
