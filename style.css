@@ -63,13 +63,13 @@ p {
     padding: 0 25px;
 }
 
-.card-text h2 {
+.card-text h1 {
     color: var(--White);
     margin-bottom: 20px;
     font-size: 22px;
 }
 
-.card-text h2:hover {
+.card-text h1:hover {
     color: var(--Cyan);
 }
 
@@ -86,7 +86,7 @@ p {
     align-items: center;
 }
 
-.price-days .price h4 {
+.price-days .price h1 {
     color: var(--Cyan);
     font-size: 16px;
     font-weight: 700;
